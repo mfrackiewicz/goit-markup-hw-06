@@ -380,7 +380,7 @@
           </p>
         </div>
         <div class="social-footer--wrapper">
-          <p class="social-footer__heading">Social media</p>
+          <p class="social-footer__title">Social media</p>
           <ul class="social-footer__list list">
             <li class="social-footer__item">
               <a class="social-footer__link" href="#0">
@@ -412,6 +412,25 @@
             </li>
           </ul>
         </div>
+        <div class="newsletter-footer--wrapper">
+          <p class="newsletter-footer__title">Subscribe</p>
+          <form class="newsletter-footer__form--wrapper">
+            <label class="newsletter-footer__label">
+              <input
+                class="newsletter-footer__input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="newsletter-footer__btn">
+              Subscribe
+              <svg class="newsletter-footer__icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -422,6 +441,88 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <div class="form--wrapper">
+          <p class="form__title">
+            Leave your contacts and we will call you back
+          </p>
+          <form class="form--layout">
+            <label class="form__label"
+              >Name
+              <div class="form__input--wrapper">
+                <span class="form__input-icon">
+                  <svg width="18px" height="18px">
+                    <use href="./images/icons.svg#icon-person"></use>
+                  </svg>
+                </span>
+                <input
+                  class="form__input"
+                  type="text"
+                  name="username"
+                  required
+                />
+              </div>
+            </label>
+            <label class="form__label"
+              >Phone
+              <div class="form__input--wrapper">
+                <span class="form__input-icon">
+                  <svg width="18px" height="24px">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                </span>
+                <input
+                  class="form__input"
+                  type="tel"
+                  name="user-phone"
+                  required
+                />
+              </div>
+            </label>
+            <label class="form__label">
+              Email
+              <div class="form__input--wrapper">
+                <span class="form__input-icon">
+                  <svg width="18px" height="24px">
+                    <use href="./images/icons.svg#icon-email"></use>
+                  </svg>
+                </span>
+                <input
+                  class="form__input"
+                  type="email"
+                  name="user-email"
+                  required
+                />
+              </div>
+            </label>
+            <label class="form__label"
+              >Comment
+              <textarea
+                class="form__textarea"
+                name="user-comment"
+                placeholder="Text input"
+              ></textarea>
+            </label>
+            <div class="form__checkbox--wrapper">
+              <label class="form__checkbox--label" for="terms">
+                <input
+                  class="form__checkbox--input"
+                  id="terms"
+                  type="checkbox"
+                  name="terms"
+                  required
+                />
+                <span class="form__checkbox--span">
+                  <svg class="form__checkbox--icon" width="10px" height="8px">
+                    <use href="./images/icons.svg#icon-checkbox"></use>
+                  </svg>
+                </span>
+                I accept the terms and conditions of the
+                <a class="form__checkbox--link" href="#">Privacy Policy</a>
+              </label>
+            </div>
+            <button class="form__btn" type="submit">Send</button>
+          </form>
+        </div>
       </div>
     </div>
 
