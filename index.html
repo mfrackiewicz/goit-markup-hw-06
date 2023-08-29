@@ -421,6 +421,7 @@
                 type="email"
                 name="email"
                 placeholder="E-mail"
+                required
               />
             </label>
             <button type="submit" class="newsletter-footer__btn">
@@ -472,7 +473,7 @@
                 </span>
                 <input
                   class="form__input"
-                  type="tel"
+                  type="number"
                   name="user-phone"
                   required
                 />
@@ -502,24 +503,24 @@
                 placeholder="Text input"
               ></textarea>
             </label>
-            <div class="form__checkbox--wrapper">
-              <label class="form__checkbox--label" for="terms">
-                <input
-                  class="form__checkbox--input"
-                  id="terms"
-                  type="checkbox"
-                  name="terms"
-                  required
-                />
-                <span class="form__checkbox--span">
-                  <svg class="form__checkbox--icon" width="10px" height="8px">
-                    <use href="./images/icons.svg#icon-checkbox"></use>
-                  </svg>
-                </span>
+            <label for="terms" class="form__checkbox--label">
+              <input
+                class="form__checkbox--input"
+                id="terms"
+                type="checkbox"
+                name="terms"
+                required
+              />
+              <span class="form__checkbox--icon">
+                <svg class="checkbox-vector" width="10px" height="8px">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              <p class="form__checkbox--statute">
                 I accept the terms and conditions of the
                 <a class="form__checkbox--link" href="#">Privacy Policy</a>
-              </label>
-            </div>
+              </p>
+            </label>
             <button class="form__btn" type="submit">Send</button>
           </form>
         </div>
